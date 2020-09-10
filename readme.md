@@ -11,6 +11,7 @@ chmod -R 777 eolinker4.0-docker
 #在此文件上可以查看数据库连接信息，填写外网ip 端口号默认3306
 www\server\Server\Web\Module\InstallModule.class.php
 ```
+
 ## 启动
 
 ```bash
@@ -20,7 +21,18 @@ docker-compose build
 docker-compose up -d
 
 ```
-
+```bash
+#启动成功之后进入mysql容器设置允许远程登录root
+docker exec -it eolinker40-docker_mysql_1 bash
+#容器内执行以下命令
+mysql -u root -p
+#输入初始密码
+h9tGyYgsTFP7
+#设置root或者其他用户远程登录的密码
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'h9tGyYgsTFP7' WITH GRANT OPTION;
+#刷新设置
+flush privileges;
+```
 
 ## 请求
 
