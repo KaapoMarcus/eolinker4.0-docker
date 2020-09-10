@@ -2,7 +2,7 @@
 
 拉取dev测试分支 
 
-git clone  -b dev url
+git clone  -b dev https://github.com/KaapoMarcus/eolinker4.0-docker.git
 
 ## 启动
 
