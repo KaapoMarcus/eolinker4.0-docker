@@ -1,5 +1,9 @@
 # eolinker4.0-docker
 
+拉取dev测试分支 
+
+git clone  -b dev url
+
 ## 启动
 
 ```bash
