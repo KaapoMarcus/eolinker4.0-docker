@@ -27,7 +27,7 @@ services:
   mysql: 
     build: ./mysql
     environment: 
-      - MYSQL_ROOT_PASSWORD=123456go*
+      - MYSQL_ROOT_PASSWORD=h9tGyYgsTFP7
     ports: 
       - "34014:3306"
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --init-file /init-database.sql
