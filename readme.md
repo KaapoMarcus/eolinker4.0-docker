@@ -33,10 +33,16 @@ GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'h9tGyYgsTFP7' WITH GRAN
 #刷新设置
 flush privileges;
 ```
-
+```bash
+#重启docker服务
+ systemctl restart docker
+```
 ## 请求
 
 > http://localhost:24285
+
+数据库连接地址填写远程ip
+
 
 ## 安装配置
 
