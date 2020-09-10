@@ -16,7 +16,7 @@ docker-compose up -d
 
 ## 请求
 
-> http://localhost:8080
+> http://localhost:24285
 
 ## 安装配置
 
