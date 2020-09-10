@@ -8,7 +8,7 @@ git clone  -b dev https://github.com/KaapoMarcus/eolinker4.0-docker.git
 chmod -R 777 eolinker4.0-docker
 ```
 ```bash
-#在此文件上可以查看数据库连接信息，填写外网ip 端口号默认3306
+#在此文件上可以查看数据库连接信息，填写外网ip 端口号默认3306  代码中有两处
 www\server\Server\Web\Module\InstallModule.class.php
 ```
 
@@ -29,7 +29,7 @@ mysql -u root -p
 #输入初始密码
 h9tGyYgsTFP7
 #设置root或者其他用户远程登录的密码
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'h9tGyYgsTFP7' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'h9tGyYgstTFP7' WITH GRANT OPTION;
 #刷新设置
 flush privileges;
 ```
