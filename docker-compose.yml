@@ -17,7 +17,7 @@ services:
   nginx: 
     build: ./nginx
     ports: 
-      - "8080:80"
+      - "24285:80"
       - "4443:443"
     volumes: 
       - "./www:/var/www/html"
@@ -27,12 +27,13 @@ services:
   mysql: 
     build: ./mysql
     environment: 
-      - MYSQL_ROOT_PASSWORD=123456
+      - MYSQL_ROOT_PASSWORD=123456go*
     ports: 
-      - "3306:3306"
-    command: --init-file /init-database.sql
+      - "34014:3306"
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --init-file /init-database.sql
     volumes: 
-      - "mysql-data:/var/lib/mysql"
+      - "./mysql:/var/lib/mysql"
+      - "./mysql/my.cnf:/etc/mysql/my.cnf"
     restart: always
 volumes: 
   mysql-data:
