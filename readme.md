@@ -27,7 +27,7 @@ docker exec -it eolinker40-docker_mysql_1 bash
 #容器内执行以下命令
 mysql -u root -p
 #输入初始密码
-h9tGyYgsTFP7
+h9tGyYgstTFP7
 #设置root或者其他用户远程登录的密码
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'h9tGyYgstTFP7' WITH GRANT OPTION;
 #刷新设置
