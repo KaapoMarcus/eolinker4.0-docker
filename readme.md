@@ -1,14 +1,14 @@
 # eolinker4.0-docker
 
-拉取dev测试分支 
+拉取prod测试分支 
 ```bash
 #拉取代码
-git clone  -b dev https://github.com/KaapoMarcus/eolinker4.0-docker.git
+git clone  -b prod https://github.com/KaapoMarcus/eolinker4.0-docker.git
 #给文件目录赋权限
 chmod -R 777 eolinker4.0-docker
 ```
 ```bash
-#在此文件上可以查看数据库连接信息，填写外网ip 端口号默认3306  代码中有两处
+#在此文件上可以查看数据库连接信息，填写外网ip 端口号默认3306  代码中有  >> 两处3306端口
 www\server\Server\Web\Module\InstallModule.class.php
 ```
 
@@ -41,8 +41,9 @@ flush privileges;
 
 > http://localhost:24285
 
-数据库连接地址填写远程ip
+数据库连接地址填写要访问应用的远程 ip
 
+一步步执行成功后  注册添加的第一个用户是管理员权限
 
 ## 安装配置
 
