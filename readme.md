@@ -1,6 +1,6 @@
 # eolinker4.0-docker
 
-拉取prod测试分支 
+拉取主干分支 
 ```bash
 #拉取代码
 git clone https://github.com/KaapoMarcus/eolinker4.0-docker.git
